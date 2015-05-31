@@ -191,6 +191,13 @@ static int __init s3c2416_dma_add(struct sys_device *sysdev)
 	return s3c24xx_dma_init_map(&s3c2416_dma_sel);
 }
 
+/* 
+ *	__initdata把变量定义到.init.data段，会在初始化完成后释放掉
+ *	Freeing init memory
+ *	这样在reboot时，sysdev_shutdown()调用list_for_each_entry(drv, &cls->drivers, entry)
+ *	cls->drivers链表中的一个节点&s3c2416_dma_driver已经是野指针，造成错误
+ */
+//static struct sysdev_driver s3c2416_dma_driver __initdata = {
 static struct sysdev_driver s3c2416_dma_driver = {
 	.add	= s3c2416_dma_add,
 };
