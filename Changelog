@@ -1,0 +1,1933 @@
+rel-0-0-0 : Ryu Euiyoul 
+	This linux kernel version is "linux-2.6.21" gotten from kernel.org.
+	Release tag starts with rel-0-0-0 which is identical with open kernel "linux-2.6.21.5".
+
+dev-0-0-0 : Ryu Euiyoul 
+	Samsung SoC's integration will be implemented at this kernel.
+	Vender tag starts with dev-0-0-0.
+	
+dev-0-0-1 : Ryu Euiyoul 
+	Samsung S3C6400 init support by adding CPU_S3C6400 at ARCH_S3C2410.
+	Modified files  : include/asm-arm/arch-s3c2410/*
+	Modified files  : arch/arm/plat-s3c24xx/*
+	Added directory : arch/arm/mach-s3c6400
+	Added config    : s3c6400_defconfig
+
+dev-0-0-2 : Ryu Euiyoul 
+	SMDK6400 serial is supported and map file is modified for s3c6400.
+	Modified Files:
+		arch/arm/plat-s3c24xx/cpu.c
+		arch/arm/plat-s3c24xx/devs.c
+		drivers/serial/s3c6400.c
+		include/asm-arm/arch-s3c2410/map.h
+		include/asm-arm/arch-s3c2410/regs-serial.h
+		include/asm-arm/arch-s3c2410/uncompress.h
+		include/asm-arm/plat-s3c24xx/cpu.h
+
+dev-0-0-3 : Ilho Lee
+	Modified Files:
+		arch/arm/plat-s3c24xx/devs.c
+		arch/arm/mach-s3c2443/s3c2443.c
+		arch/arm/mach-s3c6400/s3c6400.c
+		include/asm-arm/arch-s3c2410/map.h
+
+	Added files
+		drivers/input/touchscreen/s3c-ts.c
+		drivers/video/s3cfb.c
+		drivers/video/s3cfb.h
+		drivers/video/s3c_ltv350qv.c
+		drivers/video/s3c_ltp700wv.c
+
+dev-0-0-4 : Ilho Lee
+	Modified Files:
+		arch/arm/plat-s3c24xx/clock.c
+		arch/arm/mach-s3c6400/s3c6400.c
+		arch/arm/mach-s3c6400/clock.c
+
+dev-0-0-5 : Ilho Lee
+	Modified Files:
+		arch/arm/plat-s3c24xx/devs.c
+		include/asm-arm/arch-s3c2410/regs-nand.h
+		include/asm-arm/arch-s3c2410/regs-ts.h
+		drivers/mtd/nand/s3c-nand.c
+		drivers/input/touchsrcreen/s3c-ts.c
+		
+dev-0-0-6 : Ryu Euiyoul 
+	To support smdk6400 nfs
+	To support smdk6400 iis(OSS)
+	To support smdk6400 iic
+
+dev-0-0-7 : Ilho Lee
+	Modified Files:
+		arch/arm/plat-s3c24xx/devs.c
+		arch/arm/plat-s3c24xx/cpu.c
+		include/asm-arm/arch-s3c2410/regs-serial.h
+		arch/arm/mach-s3c6400/s3c6400.c
+		drivers/serial/s3c6400.c
+
+dev-0-0-8 : Ilho Lee
+	Modified Files:
+		arch/arm/plat-s3c24xx/gpio.c
+		include/asm-arm/arch-s3c2410/map.h
+
+dev-0-0-9 : Ilho Lee
+	Moved Files:
+		arch/arm/plat-s3c24xx/sleep-s3c64xx.c
+	Modified Files:
+		arch/arm/plat-s3c24xx/Makefile
+		arch/arm/mach-s3c6400/Makefile
+
+dev-0-0-10 : Ilho Lee
+	Modified Files:
+		drivers/video/s3cfb.c
+		drivers/video/s3cfb.h
+		drivers/video/s3c_ltv350qv.c
+		drivers/video/s3c_ltp700wv.c
+		include/asm-arm/arch-s3c2410/regs-lcd.h
+
+dev-0-0-11 : Ryu Euiyoul 
+	To Support smdk2443 AC97 ALSA driver(version 1.0.14)
+	Added dir & files:
+		sound/soc/s3c24xx/*.
+	Modified Files
+		include/sound/.
+	To Support smdk2443 nfs filesystem
+	Modified Files
+		drivers/net/cs89xx.c
+		include/asm-arm/arch-s3c2410/map.h
+
+rel-1-0-0 : Ryu Euiyoul 
+	This released kernel contains uarts, lcd, ethernet, i2s, i2c and touch screen devices of smdk6400.
+	The smdk2443's some drivers are also supported.
+
+dev-1-0-0 : JaeCheol Lee
+	To Support RTC on S3C6400
+	Modified files:
+		drivers/rtc/rts-s3c.c
+		include/asm-arm/arch-s3c2410/regs-rtc.h
+
+dev-1-0-1 : JaeCheol Lee
+	To Support APM/IDLE mode on S3C6400.
+	Modified files:
+		arch/arm/mach-s3c6400/s3c6400.c
+		arch/arm/mach-s3c6400/pm.c
+		arch/arm/plat-s3c24xx/pm.c
+		include/asm-arm/arch-s3c2410/system.h
+		drivers/rtc-s3c.c
+
+dev-1-0-2 : JaeCheol Lee
+	Add TV-OUT support on S3C6400
+	Modified files:
+		arch/arm/plat-s3c24xx/devs.c
+		arch/arm/mach-s3c6400/clock.c
+		arch/arm/mach-s3c6400/mach-smdk6400.c
+		arch/arm/mach-s3c6400/s3c6400.c
+		include/asm-arm/arch-s3c2410/irqs.h
+		include/asm-arm/arch-s3c2410/map.h
+		include/asm-arm/plat-s3c24xx/devs.h
+	Added files:
+		include/asm-arm/arch-s3c2410/regs-tvenc.h
+		include/asm-arm/arch-s3c2410/regs-tvscaler.h
+	
+dev-1-0-3 : Ryu Euiyoul 
+	To support smdk6400 I2S ALSA driver(version 1.0.14)
+	Added dir & files:
+		sound/soc/s3c/*
+	Remove dir
+		sound/soc/s3c24xx/*
+	Move file name
+		sound/oss/s3c6400_i2s.c
+		sound/oss/s3c6400_pcm.c
+
+dev-1-0-4 : Ilho Lee
+	To support HS-MMC, SD, and SDHC card
+	Added files
+		drivers/mmc/s3c-hsmmc.[ch]
+		include/asm-arm/arch-s3c2410/hsmmc.h
+		include/asm-arm/arch-s3c2410/regs-hsmmc.h
+
+	Modified files:
+		arch/arm/plat-s3c24xx/devs.c
+		arch/arm/mach-s3c6400/clock.c
+		arch/arm/mach-s3c6400/mach-smdk6400.c
+
+		include/asm-arm/arch-s3c2410/map.h
+
+dev-1-0-5 : Ryu Euiyoul 
+	To support High Speed SPI driver for smdk6400.
+	Added files:
+		drivers/spi/hspi-s3c6400.c
+		drivers/spi/hspi-s3c6400.h
+		drivers/spi/spi-dev.h
+		drivers/spi/spi-dev.c
+
+dev-1-0-6 : Ilho Lee
+	To support movi-NAND 
+	Modified files:
+		drivers/mmc/mmc.c
+
+dev-1-0-7 : JaeCheol Lee
+	Add DVFS for smdk6400
+	Added files:
+		drivers/char/s3c-dvfs/s3c-dvfs.c[h]
+		drivers/char/s3c-dvfs/Kconfig
+		drivers/char/s3c-dvfs/Makefile
+	Modified files:
+		drivers/char/Kconfig
+		drivers/char/Makefile
+
+dev-1-0-8: Jinsung Yang
+	- smdk6400mmc_defconfig added.
+	- GPGCON initial value was modified to support using \
+				mmc card as root file system device.
+
+	Added files:
+		arch/arm/configs/smdk6400mmc_defconfig
+	
+	Modified files:
+		arch/arm/mach-s3c6400/mach-smdk6400.c
+
+rel-1-1-0: Jinsung Yang
+	- official release (2007/08/10)
+
+dev-1-1-0: JaeCheol Lee
+	- Add DPM module on s3c6400
+	Added files:
+		arch/arm/mach-s3c6400/pd.c,pd-s3c6400.c[h],kdpmd.c
+		include/asm-arm/arch-s3c2410/pd.h,kdpmd.h
+	Modified files:
+		include/asm-arm/arch-s3c2410/regs-s3c6400-clock.h
+		arch/arm/mash-s3c6400/Makefile, Kconfig
+
+dev-1-1-1: Jinsung Yang
+	- Added yaffs2 file system
+
+	Added files:
+		A fs/Kconfig.pre.yaffs
+		A fs/Makefile.pre.yaffs
+		A fs/yaffs2/Kconfig
+		A fs/yaffs2/Makefile
+		A fs/yaffs2/devextras.h
+		A fs/yaffs2/moduleconfig.h
+		A fs/yaffs2/yaffs_checkptrw.c
+		A fs/yaffs2/yaffs_checkptrw.h
+		A fs/yaffs2/yaffs_ecc.c
+		A fs/yaffs2/yaffs_ecc.h
+		A fs/yaffs2/yaffs_fs.c
+		A fs/yaffs2/yaffs_guts.c
+		A fs/yaffs2/yaffs_guts.h
+		A fs/yaffs2/yaffs_mtdif.c
+		A fs/yaffs2/yaffs_mtdif.h
+		A fs/yaffs2/yaffs_mtdif2.c
+		A fs/yaffs2/yaffs_mtdif2.h
+		A fs/yaffs2/yaffs_nand.c
+		A fs/yaffs2/yaffs_nand.h
+		A fs/yaffs2/yaffs_nandemul2k.h
+		A fs/yaffs2/yaffs_packedtags1.c
+		A fs/yaffs2/yaffs_packedtags1.h
+		A fs/yaffs2/yaffs_packedtags2.c
+		A fs/yaffs2/yaffs_packedtags2.h
+		A fs/yaffs2/yaffs_qsort.c
+		A fs/yaffs2/yaffs_qsort.h
+		A fs/yaffs2/yaffs_tagscompat.c
+		A fs/yaffs2/yaffs_tagscompat.h
+		A fs/yaffs2/yaffs_tagsvalidity.c
+		A fs/yaffs2/yaffs_tagsvalidity.h
+		A fs/yaffs2/yaffsinterface.h
+		A fs/yaffs2/yportenv.h
+
+	Modified files:
+		M fs/Kconfig
+		M fs/Makefile
+
+dev-1-1-2: Byungjae Lee
+	- Support for SMDK6400 USB OTG UMS(Gadget)
+		A drivers/usb/gadget/s3c-udc-fs.c
+		A drivers/usb/gadget/s3c-udc-hs.c
+		A drivers/usb/gadget/s3c-udc-otg-hs.c
+		A drivers/usb/gadget/s3c-udc.h
+		A include/asm-arm/arch-s3c2410/regs-usb-otg-hs.h
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M arch/arm/mach-s3c6400/s3c6400.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M drivers/usb/gadget/Kconfig
+		M drivers/usb/gadget/Makefile
+		M include/asm-arm/arch-s3c2410/map.h
+		M drivers/usb/gadget/epautoconf.c
+
+	- Support for SMDK6400 USB Host
+		M drivers/usb/host/ohci-s3c2410.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M arch/arm/mach-s3c6400/clock.c
+
+rel-1-1-1: Jinsung Yang
+	- official release (2007/08/10)
+
+dev-1-1-3: Youngran Eom
+	- Support for SMDK6400 Camera Interface
+	
+	Added files:
+		A include/asm-arm/arch-s3c2410/regs-cam.h
+		A include/asm-arm/arch-s3c2410/regs-camif.h
+
+	Modified files:
+		M arch/arm/mach-s3c2443/s3c2443.c
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M arch/arm/mach-s3c6400/s3c6400.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M drivers/i2c/busses/i2c-s3c2410.c
+		M drivers/media/video/Kconfig
+		M drivers/media/video/Makefile
+		M drivers/media/video/s3c_camera_driver.c
+		M drivers/media/video/s3c_camif.c
+		M drivers/media/video/s3c_camif.h
+		M drivers/media/video/samsung/3xa_sensor.c
+		M drivers/media/video/samsung/3xa_sensor.h
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/plat-s3c24xx/devs.h
+		M include/linux/i2c-id.h
+		M include/linux/i2c.h
+
+dev-1-1-4: Jinsung Yang
+	- smdk6400 evt2 movinand boot verification completed
+	- removed warnings in mach-smdk6400.c
+
+	Modified files:
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M drivers/mmc/mmc.c
+		M drivers/mmc/s3c-hsmmc.c
+		M include/asm-arm/arch-s3c2410/hsmmc.h
+
+dev-1-1-5: Ryu Euiyoul
+	Support AC97 OSS audio driver at smdk6400 board.
+	Added files:
+		A sound/oss/s3c6400_ac97.c
+		A include/asm-arm/arch-s3c2410/bitfield.h
+	Modified files:
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M arch/arm/mach-s3c6400/s3c6400.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/arch-s3c2410/regs-ac97.h
+		M include/asm-arm/plat-s3c24xx/devs.h
+		M scripts/kconfig/Makefile
+		M sound/oss/Makefile
+		M sound/oss/s3c6400_i2s.c
+		M sound/oss/s3c6400_pcm.c
+
+dev-1-1-6: Youngran Eom
+	- Support for SMDK6400 Camera Interface
+	  Interlace mode & Software IPC implemented
+	Added files:
+		A drivers/media/video/samsung/adv7180.c
+		A drivers/media/video/samsung/adv7180.h
+	Modified files:
+		M arch/arm/plat-s3c24xx/irq-pl192.c
+		M drivers/media/video/Kconfig
+		M drivers/media/video/s3c_camera_driver.c
+		M drivers/media/video/s3c_camif.c
+		M drivers/media/video/s3c_camif.h
+		M drivers/media/video/s3c_camif_fsm.c
+		M drivers/media/video/videodev2_s3c.h
+		M drivers/media/video/samsung/3xa_sensor.c
+		M drivers/media/video/samsung/3xa_sensor.h
+		M drivers/media/video/samsung/Makefile
+		M drivers/video/s3c_ltp700wv.c
+
+dev-1-1-7: Jinsung Yang
+	- Added support MMC Power Management (Sleep Mode) for s3c6400
+
+	Modified files:
+		M arch/arm/mach-s3c6400/pm-s3c6400.c
+		M drivers/mmc/mmc.c
+		M drivers/mmc/s3c-hsmmc.c
+
+dev-1-1-8: Ryu Euiyoul
+	Implementation of smdk6400 ac97 alsa driver
+	Added files:
+		A sound/soc/codecs/wm9713.c
+		A sound/soc/codecs/wm9713.h
+		A sound/soc/s3c/s3c6400-ac97.c
+		A sound/soc/s3c/s3c6400-ac97.h
+		A sound/soc/s3c/smdk6400_wm9713.c
+	Modified files:
+		M include/sound/soc.h
+		M sound/soc/soc-core.c
+		M sound/soc/soc-dapm.c
+		M sound/soc/codecs/Kconfig
+		M sound/soc/codecs/Makefile
+		M sound/soc/s3c/Kconfig
+		M sound/soc/s3c/Makefile
+		M sound/soc/s3c/s3c-i2s.c
+		M sound/soc/s3c/s3c-pcm.c
+		M sound/soc/s3c/s3c-pcm.h
+
+dev-1-1-9: Jinsung Yang
+	- Modified to prevent bug which cannot detect new movinand
+
+	Modified files:
+		M drivers/mmc/mmc.c
+		M drivers/mmc/s3c-hsmmc.c
+
+dev-1-1-10: Jinsung Yang
+	- Added to support OneNAND driver for smdk6400
+	- cramfs filesystem only available now
+
+	Added files:
+		A arch/arm/configs/smdk6400onenand_defconfig
+		A drivers/mtd/onenand/s3c_onenand.c
+		A drivers/mtd/onenand/s3c_onenand.h
+		A include/asm-arm/arch-s3c2410/regs-onenand.h
+
+	Modified files:
+		M arch/arm/plat-s3c24xx/common-smdk.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M drivers/mtd/onenand/Makefile
+		M drivers/mtd/onenand/generic.c
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/plat-s3c24xx/devs.h
+
+dev-1-1-11: Ilho Lee
+	- Added to support High-speed uart, IRDA
+	- Added files :
+		A drivers/net/irda/s3c_sir.c
+
+	- Modified files :
+		M drivers/net/irda/Makefile
+		M drivers/net/irda/Kconfig
+		M drivers/serial/s3c6400.c
+		M drivers/serial/Kconfig
+
+		M include/asm/plat-s3c24xx/clock.h
+		M arch/asm/plat-s3c24xx/clock.c
+		M arch/asm/mach-s3c6400/clock.c
+		M arch/asm/mach-s3c6400/mach-smdk6400.c
+		M arch/asm/mach-s3c6400/s3c6400.c
+	
+dev-1-1-12: Jinsung Yang
+	- Resolved prevent defects for s3c-nand
+
+	Modified files:
+		M drivers/mtd/nand/nand_base.c
+		M drivers/mtd/nand/s3c_nand.c
+
+dev-1-1-13: Byungjae Lee
+	- Support for SMDK6400 Keypad
+
+	- Modified & Added files
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M drivers/input/keyboard/Kconfig
+		M drivers/input/keyboard/Makefile
+		A drivers/input/keyboard/s3c-keypad.c
+		A drivers/input/keyboard/s3c-keypad.h
+		M include/asm-arm/arch-s3c2410/map.h
+		A include/asm-arm/arch-s3c2410/regs-keypad.h
+		M include/asm-arm/plat-s3c24xx/devs.h
+
+dev-1-1-14: Jinsung Yang
+	- Added to support OneNAND jffs2 file system
+
+	Modified files:
+		M arch/arm/configs/smdk6400onenand_defconfig
+		M drivers/mtd/onenand/s3c_onenand.c
+		M include/asm-arm/arch-s3c2410/regs-onenand.h
+
+rel-1-2-0: Jinsung Yang
+	- Official Release: S3C6400 Beta BSP (07.10.05)
+
+dev-1-2-0: Jinsung Yang
+
+dev-1-2-1: Jinsung Yang
+	- Support OneNAND bad block scheme for S3C6400
+	- Support JFFS2 as root file system via OneNAND
+
+	Modified files:
+		M drivers/mtd/onenand/s3c_onenand.c
+		M fs/jffs2/scan.c
+
+dev-1-2-2: Ilho Lee
+	- Support pan_display and color key on LCD D/D
+
+	- Modified files:
+		M drivers/video/s3cfb.c
+		M drivers/video/s3cfb.h
+		M drivers/video/s3c_ltp700wv.c
+
+dev-1-2-3: Ilho Lee
+	- Support pan_display,color key, and double buffering on LCD D/D
+
+	- Modified files:
+		M include/asm-arm/memory.h
+		M drivers/video/s3cfb.c
+		M drivers/video/s3cfb.h
+		M drivers/video/s3c_ltp700wv.c
+
+rel-1-2-1: Jinsung Yang
+	- Official Release: S3C6400 Beta BSP for SQA (07.10.15)
+
+dev-1-2-4: Jinsung Yang
+	- OneNAND BBT Scheme applied.
+	- OneNAND Single Pipeline-Ahead Read code added.
+		(Not applied because not yet confirmed)
+
+	Modified files:
+		M drivers/mtd/onenand/Makefile
+		M drivers/mtd/onenand/onenand_bbt.c
+		M drivers/mtd/onenand/s3c_onenand.c
+		M drivers/mtd/onenand/s3c_onenand.h
+		M include/asm-arm/arch-s3c2410/regs-onenand.h
+
+dev-1-2-5: Youngran Eom
+	- Support Backlight control on LCD D/D.
+
+	Modified files:
+		M drivers/video/s3c_ltp700wv.c
+		M drivers/video/s3c_ltv350qv.c
+		M arch/arm/mach-s3c6400/pwm-s3c6400.c
+
+dev-1-2-6: Jinsung Yang
+	- Support DMA read for OneNAND (not added pl080 dma code yet)
+
+	Modified files:
+		M drivers/mtd/onenand/s3c_onenand.c
+		M drivers/mtd/onenand/s3c_onenand.h
+
+rel-1-2-2: Jinsung Yang
+	- Official Release: S3C6400 Clearcase import (07.10.23)
+
+dev-1-2-7: Ilho Lee
+	- Prefix on DMA driver only changed. S3C->S3C2410
+
+	Modified files:
+		M arch/arm/plat-s3c24xx/dma-pl080.c
+		M arch/arm/mach-s3c6400/dma.c
+
+dev-1-2-8: Ilho Lee
+dev-1-2-9: Ilho Lee
+dev-1-2-10: Ilho Lee
+dev-1-2-11: Ilho Lee
+dev-1-2-12: Ilho Lee
+dev-1-2-13: Ilho Lee
+dev-1-2-14: Ilho Lee
+dev-1-2-15: Ilho Lee
+dev-1-2-16: Ilho Lee
+	- Prefix on DMA driver only changed. S3C->S3C2410
+
+	Modified files:
+		M arch/arm/plat-s3c24xx/dma-pl080.c
+		M include/asm-arm/plat-s3c24xx/dma.h
+		M arch/arm/mach-s3c6400/dma.c
+
+dev-1-2-17: Ryu Euiyoul
+	- Support SMDK2443 AC97 ALSA 
+
+	Modified files:
+		M sound/soc/s3c/s3c-pcm.c
+		M sound/soc/s3c/s3c-pcm.h
+		M sound/soc/s3c/s3c2443-ac97.c
+		M arch/arm/plat-s3c24xx/dma.c
+
+dev-1-2-18: Ilho Lee
+dev-1-2-19: Ilho Lee
+	- Prefix on DMA driver only changed. S3C->S3C2410
+
+	Modified files:
+		M arch/arm/plat-s3c24xx/dma-pl080.c
+		M include/asm-arm/plat-s3c24xx/dma.h
+		M arch/arm/mach-s3c6400/dma.c
+
+dev-1-2-20: Ryu Euiyoul
+	- Apply new DMA scheme at sound driver
+	
+	Modified files:
+		M sound/oss/s3c6400_ac97.c
+		M sound/oss/s3c6400_i2s.c
+		M sound/oss/s3c6400_pcm.c
+		M sound/soc/s3c/s3c-i2s.c
+		M sound/soc/s3c/s3c-pcm.c
+		M sound/soc/s3c/s3c6400-ac97.c
+
+dev-1-2-21: Ilho Lee
+	- 32 DMA channels over 4 DMA controller supported.
+
+	Modified files:
+		M arch/arm/plat-s3c24xx/dma-pl080.c
+		M include/asm-arm/plat-s3c24xx/dma.h
+		M include/asm-arm/arch-s3c2410/dma.h
+		M arch/arm/mach-s3c6400/dma.c
+
+dev-1-2-22: Jinsung Yang
+	- Fixed bug for 6400 Camera (Zoom In/Out)
+	- Fixed warnings
+
+	Modified files:
+		M drivers/media/video/s3c_camera_driver.c
+		M drivers/media/video/s3c_camif.c
+		M drivers/media/video/s3c_camif.h
+		M drivers/media/video/s3c_camif_fsm.c
+		M drivers/media/video/samsung/3xa_sensor.c
+
+dev-1-2-22: Ilho Lee
+	- Some bugs on SDMA fixed. 
+
+	Modified files:
+		M arch/arm/plat-s3c24xx/dma-pl080.c
+		M arch/arm/mach-s3c6400/dma.c
+
+dev-1-2-23: Ilho Lee
+	- Waring message on DMA driver deleted.
+
+	Modified files:
+		M arch/arm/plat-s3c24xx/dma-pl080.c
+
+dev-1-2-24: Ilho Lee
+	- A bug fixed. 
+
+	Modified files:
+		M arch/arm/plat-s3c24xx/dma-pl080.c
+
+dev-1-2-25: Ryu Euiyoul
+	- Implemant the L3 driver
+
+	Added files:
+		A drivers/l3/Kconfig
+		A drivers/l3/Makefile
+		A drivers/l3/l3-algo-bit.c
+		A drivers/l3/l3-bit-s3c.c
+		A drivers/l3/l3-core.c
+		A include/linux/l3/algo-bit.h
+		A include/linux/l3/l3.h
+		A include/linux/l3/uda1341.h
+	Modified files:
+		M arch/arm/Kconfig
+		M arch/arm/plat-s3c24xx/gpio.c
+		M drivers/Makefile
+
+dev-1-2-26: Byungjae Lee
+	- Fixed bug for smdk2443 serial & Changed mtd defualt configuration of smdk2443
+
+	Modeifed files:
+		dirvers/serial/s3c2410.c
+		arch/arm/configs/smdk2443mtd_defconfig
+
+rel-1-2-3: jongpill Lee 
+	- Official Release: SMDK2443 alpha version (07.11.21)
+
+rel-2-0-0: Byungjae Lee
+	- Fixed missgin tag
+
+dev-2-0-0: Byungjae Lee
+
+dev-2-0-1: Byungjae Lee
+	- Support for S3C2443 USB Device(UMS)
+
+	Modeifed files:
+		M arch/arm/mach-s3c2443/mach-smdk2443.c
+		M arch/arm/mach-s3c2443/s3c2443.c
+		M drivers/usb/gadget/s3c-udc-hs.c
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/arch-s3c2410/regs-s3c2443-clock.h
+	Added files:
+		A include/asm-arm/arch-s3c2410/regs-udc-hs.h
+
+dev-2-0-2: Byungjae Lee
+	- Support for S3C2443 USB Host
+	Modeifed files:
+		M arch/arm/configs/smdk2443mtd_defconfig
+		M arch/arm/mach-s3c2443/mach-smdk2443.c
+
+dev-2-0-3: Ryu Euiyoul
+	- Implement the uda1341 I2S OSS driver at smdk2443
+	
+	Modeifed files:
+		M arch/arm/configs/smdk2443mtd_defconfig
+		M arch/arm/mach-s3c2443/mach-smdk2443.c
+		M arch/arm/plat-s3c24xx/dma.c
+		M include/asm-arm/arch-s3c2410/regs-iis.h
+		M sound/oss/Kconfig
+		M sound/oss/Makefile
+		M sound/oss/s3c6400_i2s.c
+		M sound/oss/s3c6400_pcm.c
+		M sound/soc/s3c/s3c-i2s.c
+	Added files:
+		A sound/oss/s3c24xx_i2s.c
+		A sound/oss/s3c24xx_pcm.c
+		A sound/oss/s3c24xx_pcm.h
+		A sound/oss/uda1341.c
+
+dev-2-0-4: Ilho Lee
+	- Support 2 moviNANDs over a single MMC bus on  S3C6400 
+	Modeifed files:
+		M drivers/mmc/mmc.c
+
+rel-2-1-0: jongpill Lee
+	- Official Release (2007.11.30)
+
+dev-2-1-0: Jongpill Lee
+
+rel-2-1-1: Joingpill Lee
+	- Official Release: Miss tagging (2007.11.30)
+
+dev-2-1-1: Jongpill Lee
+	- Support UBI(Unsorted Block Image) on S3C2443
+	
+	Modeifed files:
+		M drivers/mtd/Kconfig
+		M drivers/mtd/Makefile
+		M fs/jffs2/fs.c
+		M fs/jffs2/os-linux.h
+		M fs/jffs2/wbuf.c
+		M include/mtd/mtd-abi.h
+	Add files:
+		A drivers/mtd/ubi/Kconfig
+		A drivers/mtd/ubi/Kconfig.debug
+		A drivers/mtd/ubi/Makefile
+		A drivers/mtd/ubi/build.c
+		A drivers/mtd/ubi/cdev.c
+		A drivers/mtd/ubi/debug.c
+		A drivers/mtd/ubi/debug.h
+		A drivers/mtd/ubi/eba.c
+		A drivers/mtd/ubi/gluebi.c
+		A drivers/mtd/ubi/io.c
+		A drivers/mtd/ubi/kapi.c
+		A drivers/mtd/ubi/misc.c
+		A drivers/mtd/ubi/scan.c
+		A drivers/mtd/ubi/scan.h
+		A drivers/mtd/ubi/ubi.h
+		A drivers/mtd/ubi/upd.c
+		A drivers/mtd/ubi/vmt.c
+		A drivers/mtd/ubi/vtbl.c
+		A drivers/mtd/ubi/wl.c
+		A include/linux/mtd/ubi.h
+		A include/mtd/ubi-header.h
+		A include/mtd/ubi-user.h
+
+dev-2-1-2: Jongpill Lee
+	-Support WDT(Watchdog Timer) on S3C2443
+	Modeifed files:
+		
+		M arch/arm/plat-s3c24xx/devs.c
+		M drivers/char/watchdog/s3c2410_wdt.c
+
+dev-2-1-3: Byungjae Lee
+	-Set Native Language Support in defualt config for USB Storage on USB Host
+	Modified file
+		M arch/arm/configs/smdk2443mtd_defconfig
+
+dev-2-1-4 : Ilho Lee
+	To support ADMA2 on SD Host 2.0
+	Modified files
+		drivers/mmc/s3c-hsmmc.[ch]
+		include/asm-arm/arch-s3c2410/regs-hsmmc.h
+
+dev-2-1-5 : Jongpill Lee
+	- Support PWM(Pulse with modulation) on S3C2443
+	Add files:
+		arch/arm/mach-s3c2443/pwm-s3c2443.c
+		arch/arm/mach-pwm.h
+	Modufied files
+		arch/arm/mach-s3c2443/Kconfig
+		arch/arm/mach-s3c2443/Makefile
+		drivers/video/s3c_ltv350qv.c
+		include/asm-arm/arch-s3c2410/regs-timer.h
+
+
+dev-2-1-6 : Ilho Lee
+dev-2-1-7 : Ilho Lee
+dev-2-1-8 : Ilho Lee
+	To support ADMA2 on SD Host 2.0 : multiple DMA segments
+	Modified files
+		drivers/mmc/s3c-hsmmc.[ch]
+		include/asm-arm/arch-s3c2410/regs-hsmmc.h
+
+dev-2-1-9 : Jiun Yu
+	- Reserved memory size is modified for JPEG driver 
+
+	Modified files:
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M include/asm-arm/arch-s3c2410/reserved_mem.h
+
+dev-2-1-10: Jinsung Yang
+	- Fix defconfigs for smdk2443 and smdk6400
+	- Moved directory and menuconfig of PWM timer for 2443 and 6400
+	- Renamed WVGA LCD module for smdk6400 (LTP700WV -> LTE480WV)
+
+	Removed Files:
+		R arch/arm/mach-s3c2443/pwm-s3c2443.c
+		R arch/arm/mach-s3c2443/pwm-s3c2443.h
+		R arch/arm/mach-s3c6400/pwm-s3c6400.c
+		R arch/arm/mach-s3c6400/pwm-s3c6400.h
+		R drivers/video/s3c_ltp700wv.c
+
+	Added files:
+		A drivers/video/s3c_lte480wv.c
+		A drivers/pwm/Kconfig
+		A drivers/pwm/Makefile
+		A drivers/pwm/pwm-s3c2443.c
+		A drivers/pwm/pwm-s3c2443.h
+		A drivers/pwm/pwm-s3c6400.c
+		A drivers/pwm/pwm-s3c6400.h
+
+	Modified files:
+		M arch/arm/Kconfig
+		M arch/arm/configs/smdk2443mtd_defconfig
+		M arch/arm/configs/smdk2443nfs_defconfig
+		M arch/arm/configs/smdk6400mmc_defconfig
+		M arch/arm/configs/smdk6400mtd_defconfig
+		M arch/arm/configs/smdk6400nfs_defconfig
+		M arch/arm/configs/smdk6400onenand_defconfig
+		M arch/arm/mach-s3c2443/Kconfig
+		M arch/arm/mach-s3c2443/Makefile
+		M arch/arm/mach-s3c6400/Kconfig
+		M arch/arm/mach-s3c6400/Makefile
+		M drivers/Kconfig
+		M drivers/Makefile
+		M drivers/mtd/nand/s3c_nand.c
+		M drivers/video/Kconfig
+		M drivers/video/Makefile
+
+rel-2-1-2: Jinsung Yang
+	- Official Release (07.12.17)
+
+dev-2-1-11: Ilho Lee
+dev-2-1-12: Ilho Lee
+	- Support for S3C2443 HS-MMC controller
+
+	Modeifed files:
+		M arch/arm/mach-s3c2443/mach-smdk2443.c
+		M arch/arm/mach-s3c2443/s3c2443.c
+		M arch/arm/mach-s3c2443/clock.c
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/arch-s3c2410/irqs.h
+		M include/asm-arm/arch-s3c2410/regs-s3c2443-clock.h
+		M arch/arm/plat-s3c24xx/devs.c
+		M include/asm-arm/plat-s3c24xx/devs.h
+
+dev-2-1-13: Ilho Lee
+	- Add smdk2443_fixup()
+
+	Modeifed files:
+		M arch/arm/mach-s3c2443/mach-smdk2443.c
+
+dev-2-1-14: Jinsung Yang
+	- Support 24 bit LCD (win0, 1) for 6400/2443
+
+	Modified files:
+		M drivers/video/s3c_lte480wv.c
+		M drivers/video/s3c_ltv350qv.c
+		M drivers/video/s3cfb.c
+		M drivers/video/s3cfb.h
+
+rel-2-1-3: Jinsung Yang
+	- Official Release (07.12.24)
+
+dev-2-1-15: Jongpill Lee
+	-Support RTC for S3C2443
+
+	Modified files:
+		M arch/arm/mach-s3c2443/mach-smdk2443.c
+		M drivers/rtc/rtc-s3c.c 
+
+dev-2-1-16: Ryu Euiyoul
+	- Implemantation of FPGA6410 I2S v3.2 UDA1342 driver
+
+	Modified Files:
+		arch/arm/configs/fpga6410_defconfig
+		arch/arm/mach-s3c6400/Kconfig 
+		arch/arm/plat-s3c24xx/devs.c
+		include/asm-arm/arch-s3c2410/irqs.h
+		include/asm-arm/arch-s3c2410/regs-iis.h 
+		sound/oss/Kconfig
+		sound/oss/Makefile sound/oss/s3c6400_pcm.h
+	Added Files:
+		sound/oss/s3c6410_i2s.c 
+		sound/oss/s3c6410_pcm.c
+
+dev-2-1-17: Lee Jongpill
+	- Support SPI DMA Mode on S3C6400
+
+	Modified Files:
+		M drivers/spi/hspi-s3c6400.c
+		M drivers/spi/hspi-s3c6400.h
+		M drivers/spi/spi-dev.h
+
+dev-2-1-18: Ryu Euiyoul
+	- Additional works for I2S ALSA to support power management,
+		WM8753 init, and OSS emulation.
+
+	Modified Files:
+		M sound/soc/soc-core.c
+		M sound/soc/codecs/wm8753.c
+		M sound/soc/s3c/s3c-i2s.c
+		M sound/soc/s3c/s3c-pcm.c
+		M sound/soc/s3c/smdk6400_wm8753.c
+
+dev-2-1-19: Ryu Euiyoul
+	- Additional works for AC97 ALSA to support power management
+
+	Modified Files:
+		M sound/oss/s3c6400_ac97.c
+		M sound/soc/codecs/wm9713.c
+		M sound/soc/s3c/s3c-pcm.c
+		M sound/soc/s3c/s3c6400-ac97.c
+		M sound/soc/s3c/smdk6400_wm9713
+
+rel-2-2-0: Jongpill Lee
+	- Official Release(08.01.09)
+
+dev-2-2-0: Jongpill Lee
+	- Change config file for EABI
+
+dev-2-2-1: Jongpill Lee
+	- Support HS-SPI on S3C2443
+
+	Modified Files:
+		M arch/arm/plat-s3c24xx/devs.c
+		M drivers/spi/hspi-s3c2443.c
+		M drivers/spi/hspi-s3c2443.h
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/arch-s3c2410/regs-clock.h
+		M include/asm-arm/arch-s3c2410/regs-gpio.h
+		M include/asm-arm/arch-s3c2410/regs-s3c2443-clock.h
+		M include/asm-arm/arch-s3c2410/regs-spi.h
+
+dev-2-2-2: Jinsung Yang
+	- V4L2 streaming i/o support
+
+	Modified files:
+		M drivers/media/video/s3c_camif.h
+		M drivers/media/video/s3c_camif.c
+		M drivers/media/video/s3c_camera_driver.c
+
+dev-2-2-3: Ryu Euiyoul
+	- S3C2450 implementation
+	  Support system init, serial, and ethernet at FPGA2450 board. 
+
+	Add file:
+		A arch/arm/configs/fpga2450_defconfig
+	
+	Modified files:
+		M arch/arm/mach-s3c2443/Kconfig
+		M arch/arm/mach-s3c2443/mach-smdk2443.c
+		M arch/arm/mach-s3c2443/s3c2443.c
+		M arch/arm/mm/Kconfig
+		M arch/arm/plat-s3c24xx/cpu.c
+		M drivers/net/cs89x0.c
+		M drivers/serial/s3c2410.c
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/arch-s3c2410/regs-mem.h
+		M include/asm-arm/arch-s3c2410/regs-s3c2443-clock.h
+
+dev-2-2-4: Ryu Euiyoul
+	- S3C2450 AC97 ALSA driver implemention
+	  Support WM9713 AC97 driver at FPGA2450 board.
+
+	  Add files:
+		A sound/soc/s3c/s3c2450-ac97.c
+		A sound/soc/s3c/smdk2450_wm9713.c
+
+	  Modified files:
+		M sound/soc/s3c/Kconfig
+		M sound/soc/s3c/Makefile
+		M sound/soc/s3c/s3c2443-ac97.c
+		M sound/soc/s3c/s3c24xx-ac97.h
+		M sound/soc/s3c/smdk2443_wm9710.c
+
+dev-2-2-5: Jongpill Lee
+	- Reboot Function added
+
+	Modified files:
+		M include/asm-arm/arch-s3c2410/system.h
+		M drivers/ide/arm/s3c-ide.c
+
+rel-2-2-1: Jongpill
+	- Official Release: temporary version (08.01.25)
+
+dev-2-2-6: Ryu Euiyoul
+	- S3C6400 SPI modification
+
+	Modified files:
+		M drivers/spi/hspi-s3c6400.c
+		M drivers/spi/spi-dev.c
+		M drivers/spi/spi-dev.h
+
+dev-2-2-7: Ryu Euiyoul
+	- Add S3C2450 machine directory and DMA change
+
+	Add files:
+		A arch/arm/mach-s3c2450/Kconfig
+		A arch/arm/mach-s3c2450/Makefile
+		A arch/arm/mach-s3c2450/s3c2450.c
+		A include/asm-arm/plat-s3c24xx/s3c2450.h
+
+	Modified files:
+		M arch/arm/Kconfig
+		M arch/arm/Makefile
+		M arch/arm/configs/fpga2450_defconfig
+		M arch/arm/mach-s3c2442/Kconfig
+		M arch/arm/mach-s3c2443/Kconfig
+		M arch/arm/mach-s3c2443/dma.c
+		M arch/arm/mm/Kconfig
+		M arch/arm/plat-s3c24xx/cpu.c
+		M arch/arm/plat-s3c24xx/dma.c
+		M include/asm-arm/arch-s3c2410/dma.h
+		M include/asm-arm/arch-s3c2410/irqs.h
+
+dev-2-2-8: Ryu Euiyoul
+	- Set the SMDK2450 machine to use without SMDK2443
+	Add files:
+		A arch/arm/mach-s3c2450/clock.c
+		A arch/arm/mach-s3c2450/dma.c
+		A arch/arm/mach-s3c2450/irq.c
+		A arch/arm/mach-s3c2450/mach-smdk2450.c
+		A include/asm-arm/arch-s3c2410/regs-s3c2450-clock.h
+
+	Modified files:
+		M arch/arm/configs/fpga2450_defconfig
+		M arch/arm/mach-s3c2450/Kconfig
+		M arch/arm/mach-s3c2450/Makefile
+		M arch/arm/mach-s3c2450/s3c2450.c
+		M arch/arm/plat-s3c24xx/cpu.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M drivers/net/cs89x0.c
+		M drivers/serial/s3c2410.c
+		M drivers/video/s3c_ltv350qv.c
+		M drivers/video/s3cfb.c
+		M include/asm-arm/arch-s3c2410/dma.h
+		M include/asm-arm/arch-s3c2410/irqs.h
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/arch-s3c2410/regs-lcd.h
+		M include/asm-arm/arch-s3c2410/regs-mem.h
+		M include/asm-arm/arch-s3c2410/regs-s3c2443-clock.h
+		M include/asm-arm/arch-s3c2410/regs-spi.h
+		M include/asm-arm/arch-s3c2410/uncompress.h
+		M include/asm-arm/plat-s3c24xx/devs.h
+		M include/asm-arm/plat-s3c24xx/s3c2450.h
+
+dev-2-2-9: Jinsung Yang
+	- Current version fix for V4L2 Camera Driver before refactoring
+
+dev-2-2-10: Jinsung Yang
+	[CAMERA REFACTORING] 2412, interlace removed
+
+dev-2-2-11: Jinsung Yang
+	[CAMERA REFACTORING] function naming change
+
+	Modified files:
+		M arch/arm/mach-s3c2443/s3c2443.c
+		M arch/arm/mach-s3c2450/s3c2450.c
+		M arch/arm/mach-s3c6400/s3c6400.c
+		M drivers/media/video/s3c_camera_driver.c
+		M drivers/media/video/s3c_camif.c
+		M drivers/media/video/s3c_camif.h
+		M drivers/media/video/s3c_camif_fsm.c
+		M drivers/media/video/samsung/3xa_sensor.c
+
+dev-2-2-12: Ilho Lee
+	- HS-MMC driver added for S3C2450
+		M arch/arm/mach-s3c2450/mach-smdk2450.c
+
+dev-2-2-13: Jinsung Yang
+	[CAMERA REFACTORING] phase1 completed
+
+dev-2-2-14: Jinsung Yang
+	[CAMERA REFACTORING]
+
+dev-2-2-15: Jinsung Yang
+	[CAMERA REFACTORING] platform device
+	fix rotate 90/270 bug
+
+	Modified files:
+		M arch/arm/mach-s3c2443/mach-smdk2443.c
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M drivers/media/video/s3c_camera_driver.c
+		M drivers/media/video/s3c_camif.c
+		M drivers/media/video/s3c_camif.h
+		M include/asm-arm/plat-s3c24xx/devs.h
+
+dev-2-2-16: Jongpill Lee
+	- PWM driver added for S3C2450
+
+	Added files:
+		A drivers/pwm/pwm-s3c2450.c
+		A drivers/pwm/pwm-s3c2450.h
+
+	Modified files:
+		M drivers/video/s3c_ltv350qv.c
+
+dev-2-2-17: Jinsung Yang
+	[CAMERA REFACTORING] all phase completed
+
+dev-2-2-18: Ryu Euiyoul
+	Mach-s3c6410 implementation 
+
+	Added files:
+		A arch/arm/mach-s3c6410/Kconfig
+		A arch/arm/mach-s3c6410/Makefile
+		A arch/arm/mach-s3c6410/clock.c
+		A arch/arm/mach-s3c6410/dma-sysfs.c
+		A arch/arm/mach-s3c6410/dma.c
+		A arch/arm/mach-s3c6410/irq.c
+		A arch/arm/mach-s3c6410/kdpmd.c
+		A arch/arm/mach-s3c6410/leds-s3c6410.c
+		A arch/arm/mach-s3c6410/leds.c
+		A arch/arm/mach-s3c6410/leds.h
+		A arch/arm/mach-s3c6410/mach-smdk6410.c
+		A arch/arm/mach-s3c6410/pd-s3c6410.c
+		A arch/arm/mach-s3c6410/pd-s3c6410.h
+		A arch/arm/mach-s3c6410/pd.c
+		A arch/arm/mach-s3c6410/pm-s3c6410.c
+		A arch/arm/mach-s3c6410/pm-s3c6410.h
+		A arch/arm/mach-s3c6410/pm.c
+		A arch/arm/mach-s3c6410/s3c6410.c
+		A sound/soc/codecs/wm8580.c
+		A sound/soc/codecs/wm8580.h
+		A sound/soc/codecs/wm8772.c
+		A sound/soc/s3c/s3c2450-i2s.c
+		A sound/soc/s3c/smdk2450_wm8580.c
+		A sound/soc/codecs/wm8772.h
+
+	Modified files:
+		M arch/arm/mm/Kconfig
+		M arch/arm/Kconfig
+		M arch/arm/Makefile
+		M arch/arm/configs/fpga6410_defconfig
+		M arch/arm/mach-s3c2450/clock.c
+		M arch/arm/mach-s3c6400/Kconfig
+		M arch/arm/plat-s3c24xx/Kconfig
+		M arch/arm/plat-s3c24xx/clock.c
+		M arch/arm/plat-s3c24xx/cpu.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M arch/arm/plat-s3c24xx/pm.c
+		M arch/arm/tools/mach-types
+		M drivers/serial/Kconfig
+		M include/asm-arm/arch-s3c2410/debug-macro.S
+		M include/asm-arm/arch-s3c2410/dma.h
+		M include/asm-arm/arch-s3c2410/entry-macro.S
+		M include/asm-arm/arch-s3c2410/hardware.h
+		M include/asm-arm/arch-s3c2410/irqs.h
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/arch-s3c2410/memory.h
+		M include/asm-arm/arch-s3c2410/regs-ac97.h
+		M include/asm-arm/arch-s3c2410/regs-camif.h
+		M include/asm-arm/arch-s3c2410/regs-gpio.h
+		M include/asm-arm/arch-s3c2410/regs-iis.h
+		M include/asm-arm/arch-s3c2410/regs-irq.h
+		M include/asm-arm/arch-s3c2410/regs-lcd.h
+		M include/asm-arm/arch-s3c2410/regs-mem.h
+		M include/asm-arm/arch-s3c2410/regs-rtc.h
+		M include/asm-arm/arch-s3c2410/regs-s3c2450-clock.h
+		M include/asm-arm/arch-s3c2410/regs-serial.h
+		M include/asm-arm/arch-s3c2410/regs-spi.h
+		M include/asm-arm/arch-s3c2410/regs-timer.h
+		M include/asm-arm/arch-s3c2410/system.h
+		M include/asm-arm/arch-s3c2410/timex.h
+		M include/asm-arm/arch-s3c2410/uncompress.h
+		M include/asm-arm/plat-s3c24xx/clock.h
+		M include/asm-arm/plat-s3c24xx/cpu.h
+		M include/asm-arm/plat-s3c24xx/devs.h
+		M include/asm-arm/plat-s3c24xx/dma.h
+		M include/asm-arm/plat-s3c24xx/s3c6400.h
+		M sound/soc/codecs/Kconfig
+		M sound/soc/codecs/Makefile
+		M sound/soc/s3c/Kconfig
+		M sound/soc/s3c/Makefile
+		M sound/soc/s3c/s3c-pcm.c
+		M sound/soc/s3c/s3c-pcm.h
+
+dev-2-2-19: Jongpill Lee
+	- Support RTC and WDT on SMDK2450
+
+	Modified Files
+
+		M drivers/char/watchdog/s3c2410_wdt.c
+		M drivers/rtc/rtc-s3c.c
+		M include/asm-arm/arch-s3c2410/map.h
+
+dev-2-2-20: Jongpill Lee
+	- Support HS-SPI on SMDK2450
+
+	Modified Files
+
+		M drivers/spi/Kconfig
+		M drivers/spi/Makefile
+		M drivers/spi/hspi-s3c2443.c
+
+dev-2-2-21: Jinsung Yang
+	- Support camif on SMDK2450
+
+	Modified files:
+		M arch/arm/mach-s3c2443/s3c2443.c
+		M arch/arm/mach-s3c2450/s3c2450.c
+		M arch/arm/mach-s3c6400/s3c6400.c
+		M drivers/media/video/s3c_camera_driver.c
+		M drivers/media/video/s3c_camif.c
+		M drivers/media/video/s3c_camif.h
+		M include/asm-arm/arch-s3c2410/regs-camif.h
+		M include/asm-arm/arch-s3c2410/regs-irq.h
+
+rel-2-2-2: Jinsung Yang
+	- Official Release (08.02.21)
+
+dev-2-2-22: Jinsung Yang
+	- Support smdk6410xxx_defconfig
+
+	Added files:
+		A arch/arm/configs/smdk6410mtd_defconfig
+		A arch/arm/configs/smdk6410mmc_defconfig
+		A arch/arm/configs/smdk6410nfs_defconfig
+		A arch/arm/configs/smdk6410onenand_defconfig
+
+	Modified files:
+		M arch/arm/plat-s3c24xx/Kconfig
+		M arch/arm/plat-s3c24xx/dma-pl080.c
+		M drivers/char/Makefile
+		M drivers/i2c/busses/i2c-s3c2410.c
+		M drivers/ide/arm/s3c-ide.c
+		M drivers/input/keyboard/Kconfig
+		M drivers/input/keyboard/s3c-keypad.h
+		M drivers/input/touchscreen/s3c-ts.c
+		M drivers/media/video/s3c_camera_driver.c
+		M drivers/media/video/s3c_camif.c
+		M drivers/media/video/s3c_camif.h
+		M drivers/mmc/Kconfig
+		M drivers/mtd/nand/s3c_nand.c
+		M drivers/mtd/onenand/Makefile
+		M drivers/mtd/onenand/generic.c
+		M drivers/mtd/onenand/onenand_bbt.c
+		M drivers/net/irda/s3c-sir.c
+		M drivers/pwm/Kconfig
+		M drivers/rtc/rtc-s3c.c
+		M drivers/spi/spi-dev.c
+		M drivers/usb/gadget/Kconfig
+		M drivers/usb/host/ohci-s3c2410.c
+		M drivers/video/s3c_lte480wv.c
+		M drivers/video/s3c_ltv350qv.c
+		M drivers/video/s3cfb.c
+		M drivers/video/s3cfb.h
+		M include/asm-arm/arch-s3c2410/irqs.h
+		M include/asm-arm/arch-s3c2410/regs-keypad.h
+dev-2-2-23: Laputa
+	- add Supporting  DVFS of smdk6410 and modifying Kconfig
+
+dev-2-2-24: Ryu Euiyoul
+	- Support SMDK6400 Sound Full-duplex and add smdk6410 sound
+	Added files:
+		A sound/soc/s3c/s3c6410-i2s-v40.c
+		A sound/soc/s3c/smdk6410_wm8580.c
+	Modified files:
+		M arch/arm/mach-s3c6400/dma.c
+		M include/asm-arm/arch-s3c2410/dma.h
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/arch-s3c2410/regs-gpio.h
+		M include/linux/i2c-id.h
+		M sound/soc/codecs/wm8580.c
+		M sound/soc/codecs/wm8580.h
+		M sound/soc/s3c/Kconfig
+		M sound/soc/s3c/Makefile
+		M sound/soc/s3c/s3c-i2s.c
+		M sound/soc/s3c/s3c6400-ac97.c
+		M sound/soc/s3c/smdk6400_wm8753.c
+dev-2-2-25: Laputa
+	-DVFS make condition changed and GPIO debug.
+	-DVFS had been upgraded and modified DVS and DFS mode in order to power .
+	-GPIO bug patch : offse value wrong calcuration GPK,GPH,GPL
+		Modified files
+		kernel/power/kconfig
+			driver/char/Makefile
+			driver/char/s3c-dvfs/s3c-dvfs.c
+			arch/arm/plat-s3c24xx/gpio.c
+			void s3c_gpio_cfgpin(unsigned int pin, unsigned int function)....
+dev-2-2-26: Laputa
+	- arch/arm/plat-s3c24xx/gpio.c gpio configuration calcuration path changed 
+	   : only for 6400's 4bit definition
+
+dev-2-2-27: Byungjae Lee
+	- usb otg device gadget support for s3c6410
+
+	Modified file
+		M dirvers/usb/gadget/s3c-udc-otg-hs.c
+
+dev-2-2-28: Jinsung Yang
+	- G3D support for s3c6410
+
+	Added files:
+		A drivers/g3d/Kconfig
+		A drivers/g3d/Makefile
+		A drivers/g3d/s3c_g3d.c
+
+	Modified files:
+		M arch/arm/Kconfig
+		M arch/arm/configs/sanjose2_6410nfs_defconfig
+		M arch/arm/configs/sanjose2_6410ramdisk_defconfig
+		M arch/arm/mach-s3c6410/mach-smdk6410.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M arch/arm/plat-s3c24xx/dma-pl080.c
+		M drivers/Makefile
+		M drivers/video/s3c_lte480wv.c
+		M drivers/video/s3cfb.c
+		M include/asm-arm/arch-s3c2410/dma.h
+		M include/asm-arm/arch-s3c2410/irqs.h
+		M include/asm-arm/arch-s3c2410/map.h
+		M include/asm-arm/plat-s3c24xx/devs.h
+
+rel-2-2-3: Jinsung Yang
+	- finalize SANJOSE2 platform support
+
+dev-2-2-29: Jongpill Lee
+	- UART Clock Chnage PCLK to CLKUART
+	
+	Modified files:
+		M drivers/serial/s3c6400.c
+
+dev-2-2-30: jongpill Lee
+	-UART bug is temporary fixed
+
+	Modifiled files:
+		M Drivers/serial/s3c6400.c
+
+dev-2-2-31: Ryu Euiyoul
+	- Alpha version wm8580 S3C2450 commit
+
+	Added files:
+		A include/asm-arm/arch-s3c2410/regs-s3c6410-clock.h
+	Modified files:
+		M arch/arm/mach-s3c6410/dma.c
+		M include/asm-arm/arch-s3c2410/dma.h
+		M include/asm-arm/arch-s3c2410/regs-gpio.h
+		M include/asm-arm/arch-s3c2410/regs-iis.h
+		M sound/soc/codecs/wm8580.c
+		M sound/soc/s3c/Kconfig
+		M sound/soc/s3c/s3c-i2s.h
+		M sound/soc/s3c/s3c2450-i2s.c
+		M sound/soc/s3c/s3c6410-i2s-v40.c
+		M sound/soc/s3c/smdk2450_wm8580.c
+		M sound/soc/s3c/smdk6400_wm8753.c
+		M sound/soc/s3c/smdk6410_wm8580.c
+
+
+rel-3-0-0: jongpill Lee 
+        - Official Release: SMDK6410 alpha version (08.03.10)
+
+dev-3-0-0: Jongpill Lee
+dev-3-0-1: Laputa
+	- changed to set default duplex from half to full duplex
+	Modified file
+	 M driver/net/cs89x0.c
+
+dev-3-0-2: Jongpill Lee
+	- RTC TICK INT Bug Fixed on SMDK6410
+	Modified File:
+		M drivers/rtc/s3c-rtc.c
+
+dev-3-0-3: Jongpill Lee
+	- Modified PWM Channel for SMDK2450
+
+	Modified Files:
+
+		M drivers/pwm/pwm-s3c2450.c
+		M drivers/video/s3c_lte480wv.c
+		M drivers/video/s3cfb.h
+
+dev-3-0-4: Jongpill Lee
+	- UART Clock added MPLL Clock
+
+	Modified Files:
+
+		M arch/arm/mach-s3c6400/clock.c
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M arch/arm/mach-s3c6410/clock.c
+		M arch/arm/mach-s3c6410/mach-smdk6410.c 
+		M drivers/serial/s3c6400.c 
+
+dev-3-0-5: Jongpill Lee
+	- Function Name Change
+
+	Modified Files:
+
+		M arch/arm/mach-s3c6400/clock.c
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M arch/arm/mach-s3c6410/clock.c
+		M arch/arm/mach-s3c6410/mach-smdk6410.c
+
+dev-3-0-6: Jongpill Lee
+	- HS-SPi Bug Detect and Modified
+
+	Modified Files:
+
+		M drivers/spi/hspi-s3c6400.c
+
+dev-3-0-7:Jongpill Lee
+	- Fix UART Clock SRC to CLKUART
+
+	Modified Files:
+
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M arch/arm/mach-s3c6410/mach-smdk6410.c
+
+dev-3-0-8:Jongpill Lee
+	- HS-SPI EPLL Clock source changed EPLL to MPLL
+
+	Modified Files:
+
+		M drivers/spi/hspi-s3c6400.c
+
+dev-3-0-9:Jongpill Lee
+	- Add Definition of Nand on SMDK2450
+
+	Modified Files:
+
+		M arch/arm/configs/smdk2450mtd_defconfig
+
+rel-4-0-0: Jongpill Lee
+	- Official Release (SMDK2450 Alpha Release)
+
+dev-4-0-0: Jongpill Lee
+
+dev-4-0-1: Jinsung Yang
+	- Flash based bbt support
+	- Factory invalid block check support for Samsung MLC
+
+rel-4-0-1: Jinsung Yang
+	- Official Release (08.03.28)
+
+
+dev-4-0-2: Kwanghyun La
+	- add 100Mbps ethernet SMC LAN9115 Driver ported
+	- it 's only support for inified new SMDK6410
+	- but it's not fixed version, it has to need debugging and optimizing.
+	- only for basic porting in order to including SMC9115 ethernet
+	deivece
+
+dev-4-0-3: Ilho Lee
+	- 2-channel HS-MMC driver for S3C2450 has been added.
+	Modified File:
+		M arch/arm/plat-s3c24xx/devs.c
+		M include/asm-arm/plat-s3c24xx/devs.h
+		M arch/arm/mach-s3c2450/mach-smdk2450.c
+		M include/asm-arm/arch-s3c2410/irqs.h
+		M drivers/mmc/host/s3c-hsmmc.c
+
+dev-4-0-4: Jinsung Yang
+	- Flash based bbt support
+	- 1st finalize version
+
+dev-4-0-5: Ilho Lee
+	- 2-channel HS-MMC driver for S3C6410 has been added.
+	Modified File:
+		M arch/arm/plat-s3c24xx/devs.c
+		M arch/arm/mach-s3c2450/mach-smdk6410.c
+		M drivers/mmc/host/s3c-hsmmc.c
+
+dev-4-0-6: Ryu Euiyoul
+	- Support SMDK2416
+
+dev-4-0-7: Ilho Lee
+	- 100Mbit ethernet drivers over SMC9115 for S3C6410/S3C2450 have been
+	added.
+	Modified File:
+	        M arch/arm/plat-s3c24xx/devs.c
+		M arch/arm/mach-s3c6410/mach-smdk6410.c
+		M arch/arm/mach-s3c2450/mach-smdk2450.c
+		M drivers/net/Kconfig
+		M drivers/net/smc911x.[ch]
+
+rel-4-0-2: Jinsung Yang
+	- Official Release (08.04.02)
+
+dev-4-0-8: Jinsung Yang
+	- OneNAND support
+
+	Modified files:
+		M arch/arm/configs/smdk6410onenand_defconfig
+		M drivers/mtd/onenand/s3c_onenand.c
+		M include/asm-arm/arch-s3c2410/regs-onenand.h
+
+rel-4-1-0: Jinsung Yang
+	- Official Release (08.04.04)
+
+dev-4-1-0: Jinsung Yang
+
+dev-4-1-1: SungJun Bae
+	- I2S Fullduplex for s3c6400.
+
+	Modified Files:
+		M sound/soc/soc-core.c 
+		M sound/soc/codecs/wm8753.c
+		M sound/soc/s3c/Kconfig 
+		M sound/soc/s3c/s3c-i2s.c
+
+dev-4-1-2: Byungjae Lee
+	- Supprot core APM for s3c6410
+
+	Modified Files:
+		M arch/arm/mach-s3c6410/leds.c
+		M arch/arm/mach-s3c6410/pm.c
+		M arch/arm/mach-s3c6410/s3c6410.c
+		M arch/arm/plat-s3c24xx/pm.c
+		M drivers/serial/s3c6400.c
+
+dev-4-1-3: Ilho Lee
+	- DOUTmpll is adopted for the SD clock source of HS-MMC controller. 
+
+	Modified File:
+		M arch/arm/mach-s3c6410/clock.c
+		M arch/arm/mach-s3c6410/mach-smdk6410.c
+dev-4-1-4: laputa
+	- added the simple idle mode in s3c2450,s3c2416 and s3c64xx
+	modified File :
+		arch/arm/mach-s3c2450/s3c2450.c
+		arch/arm/mach-s3c2416/s3c2416.c
+		arch/arm/mach-s3c6400/s3c6400.c
+		arch/arm/mach-s3c6410/s3c6410.c
+
+rel-4-2-0: Kyung Il Kim
+	- Official Release for SMDK6410(08.04.11)
+
+dev-4-2-0: Kyoung Il Kim
+
+dev-4-2-1: Jinsung Yang
+	- SMDK6410 SDHC support
+
+dev-4-2-2: Byungjae Lee
+	- Supprot USB device UMS for s3c2450/2416
+
+	- Modified Files:
+		M drivers/usb/gadget/Kconfig
+		M drivers/usb/gadget/s3c-udc-hs.c
+		M include/asm-arm/arch-s3c2410/regs-udc-hs.h
+dev-4-2-3: Laputa
+	- added the unified DVFS function
+	- Modified Files:
+		arch/arm/mach-s3c2416/s3c2416.c
+		arch/arm/mach-s3c2443/s3c2443.c
+		arch/arm/mach-s3c2450/s3c2450.c
+		drivers/char/Makefilei  --> for compmiling with DVFS
+		drivers/char/s3c-dvfs/Kconfig --> for enabling menu configuration
+		drivers/char/s3c-dvfs/s3c-dvfs.c --> unifed function
+		drivers/char/s3c-dvfs/s3c-dvfs.h --> unifed definition
+
+dev-4-2-4: Ryu Euiyoul
+	- Support SMDK2450 DMA channel 6,7 & interrupt PND2
+	- Modified Files:
+		arch/arm/mach-s3c2450/irq.c
+		arch/arm/plat-s3c24xx/irq.c
+		include/asm-arm/arch-s3c2410/entry-macro.S
+
+dev-4-2-5: Ryu Euiyoul
+	- Support SMDK2450 multi channel I2S0
+	- Modified Files:
+		include/asm-arm/arch-s3c2410/regs-s3c2416-clock.h
+		include/asm-arm/arch-s3c2410/regs-s3c2450-clock.h
+		sound/soc/s3c/s3c2450-i2s.c
+		sound/soc/s3c/smdk2450_wm8580.c
+		sound/soc/s3c/smdk2450_wm8753.c
+
+dev-4-2-6: Ilho Lee
+	- The YAFFS2 filesystem is being supported.
+	- Modified Files:
+		fs/yaffs2/yaffs_mtdif2.c
+		drivers/mtd/onenand/s3c_onenand.c
+
+dev-4-2-7: Jongpill Lee
+	- CFS Scheduler support
+	- Added Files:
+		A Documentation/sched-design-CFS.txt
+		A kernel/sched_debug.c
+		A kernel/sched_fair.c
+		A kernel/sched_idletask.c
+		A kernel/sched_rt.c
+		A kernel/sched_stats.h
+
+	- Modifies Files:
+		M Makefile
+		M Documentation/kernel-parameters.txt
+		M arch/i386/kernel/smpboot.c
+		M arch/i386/kernel/tsc.c
+		M arch/ia64/kernel/setup.c
+		M arch/mips/kernel/smp.c
+		M arch/sparc/kernel/smp.c
+		M arch/sparc64/kernel/smp.c
+		M block/cfq-iosched.c
+		M fs/proc/array.c
+		M fs/proc/base.c
+		M include/asm-arm/div64.h
+		M include/asm-generic/div64.h
+		M include/asm-generic/bitops/sched.h
+		M include/asm-i386/div64.h
+		M include/asm-m68k/div64.h
+		M include/asm-mips/div64.h
+		M include/asm-um/div64.h
+		M include/asm-xtensa/div64.h
+		M include/linux/hardirq.h
+		M include/linux/sched.h
+		M include/linux/topology.h
+		M init/main.c
+		M kernel/delayacct.c
+		M kernel/exit.c
+		M kernel/fork.c
+		M kernel/posix-cpu-timers.c
+		M kernel/sched.c
+		M kernel/softirq.c
+		M kernel/softlockup.c
+		M kernel/sysctl.c
+		M lib/Kconfig.debug
+		M lib/Makefile
+		M lib/cpumask.c
+		M lib/div64.c
+		M mm/page_alloc.c
+		M net/ipv4/tcp_cubic.c
+		M net/netfilter/xt_connbytes.c
+		M security/selinux/avc.c
+		M security/selinux/hooks.c
+		M security/selinux/include/avc.h
+		M security/selinux/ss/services.c
+
+rel-4-3-0: Jongpill Lee
+	- Official Release (08.04.29)
+
+dev-4-3-0: Jongpill Lee
+
+dev-4-3-1: Jongpill Lee
+	- Support HS-SPI on SMDK2416
+
+	Modified Files:
+		M arch/arm/mach-s3c2416/dma.c
+		M drivers/spi/Kconfig
+		M drivers/spi/hspi-s3c2443.c
+		M include/asm-arm/arch-s3c2410/regs-s3c2416-clock.h
+		M include/asm-arm/arch-s3c2410/regs-s3c2443-clock.h
+		M include/asm-arm/arch-s3c2410/regs-s3c2450-clock.h
+
+dev-4-3-2: Jongpill Lee
+	- Support PWM on SMDK2416
+
+	Modified Files:
+		M drivers/pwm/Kconfig
+		M drivers/pwm/Makefile
+		M drivers/video/s3c_lte480wv.c
+
+dev-4-3-3: Jongpill Lee
+	- PWM output channel bug fixed
+
+	Modified Files:
+		M drivers/video/s3c_lte480wv.c
+
+dev-4-3-4: Ilho Lee
+	- The YAFFS2 filesystem on oneNAND is being supported(Phase 1 completed).
+	- Modified Files:
+		fs/yaffs2/yaffs_mtdif2.c
+		drivers/mtd/onenand/s3c_onenand.c
+
+dev-4-3-5: Byungjae Lee
+	- removed USB OTG PHY reset at board init 
+	  power off OTG PHY at rmmod g_file_storage
+	- Modified Files
+		M arch/arm/mach-s3c6410/mach-smdk6410.c
+		M drivers/usb/gadget/s3c-udc-otg-hs.c
+
+dev-4-3-6: Byungjae Lee
+	- OTG PHY enable for 48MHz clock  at enabled USB Host
+	- Modified File
+		M arch/arm/mach-s3c6410/clock.c
+
+dev-4-3-7: Jinsung Yang
+	- Bug fix and improvements for Camera Interface (6410)
+
+	Modified files:
+		drivers/media/video/s3c_camif.h
+		drivers/media/video/s3c_camif.c
+		drivers/media/video/s3c_camera_driver.c
+		drivers/media/video/samsung/4xa_sensor.c
+
+dev-4-3-8: Byungjae Lee
+	- Support USB host for smdk2450/16
+
+	Modified File
+		M drivers/usb/host/ohci-s3c2410.c
+
+rel-4-3-1: Official release for SSPTS(08.5.19)
+
+dev-4-3-9: Jinsung Yang
+	- Suppport LTS222QV LCD for SMDK6410
+
+	Modified files:
+		drivers/video/s3c_lts222qv.c
+
+dev-4-3-10: Ilho Lee
+	- A bug for s3c6400 fixed 
+
+	Modified files:
+		drivers/input/touchscreen/s3c-ts.c
+
+rel-4-3-2: Jongpill Lee
+	- Official Release('08.05.21)
+
+dev-4-3-11: Jongpill Lee
+	- bug fixed DVFS on SMDK2450 and SMDK2416
+
+	Modified Files:
+
+	M drivers/char/s3c-dvfs/s3c-dvfs.c
+	M drivers/char/s3c-dvfs/s3c-dvfs.h
+	
+dev-4-3-12: Ryu Euiyoul
+	- APM(Sleep mode) implementation at smdk2450
+
+	Add Files:
+		A arch/arm/mach-s3c2450/pm.c
+
+	Modified Files:
+		M arch/arm/mach-s3c2410/Kconfig
+		M arch/arm/mach-s3c2450/Kconfig
+		M arch/arm/mach-s3c2450/Makefile
+		M include/asm-arm/arch-s3c2410/regs-dsc.h
+		M include/asm-arm/arch-s3c2410/regs-gpio.h
+		M include/asm-arm/arch-s3c2410/regs-gpioj.h
+		M include/asm-arm/arch-s3c2410/regs-s3c2450-clock.h
+
+dev-4-3-13: Kyoungil Kim
+	- Qwerty Keyboard mapping to keypad interface at SMDK6410
+
+	Modified Files:
+		M drivers/input/keyboard/s3c-keypad.h
+
+dev-4-3-14: Ryu Euiyoul
+	- APM(Sleep mode) implementation at smdk2416
+
+	Add File:
+		A arch/arm/mach-s3c2416/pm.c
+
+	Modified Files:
+		M include/asm-arm/arch-s3c2410/regs-s3c2416-clock.h
+		M arch/arm/configs/smdk2416mtd_defconfig
+		M arch/arm/mach-s3c2416/Kconfig
+		M arch/arm/mach-s3c2416/Makefile
+
+dev-4-3-15: Jongpill Lee
+	- Support IrDA on smdk2416 and smdk 2450
+
+	Modified Files:
+		M arch/arm/mach-s3c2416/s3c2416.c
+		M arch/arm/mach-s3c2450/mach-smdk2450.c
+		M arch/arm/mach-s3c2450/s3c2450.c
+		M include/asm-arm/arch-s3c2410/regs-gpio.h
+		M include/asm-arm/arch-s3c2410/regs-serial.h
+		M arch/arm/mach-s3c2416/mach-smdk2416.c
+		M arch/arm/plat-s3c24xx/irq.c
+		M drivers/net/irda/s3c-sir.c
+
+dev-4-3-16: Jongpill Lee
+	- Default Mode of IrDA fix
+
+	Modified Files:
+		M drivers/net/irda/s3c-sir.c
+
+rel-4-4-0: Jongpill Lee
+	- Official Release(08.05.30)
+
+dev-4-4-0: Jongpill Lee
+
+dev-4-4-1: Jongpill Lee
+	- deffect is resolved for some IP(serial,pwm,dvfs)
+
+	Modified Files:
+
+		M drivers/char/s3c-dvfs/s3c-dvfs.c
+		M drivers/pwm/pwm-s3c2450.c
+		M drivers/pwm/pwm-s3c6400.c
+		M drivers/serial/s3c2410.c
+
+dev-4-4-2: Ryu Euiyoul
+	- Support 5.1channel at smdk2450
+
+rel-4-4-1:Jongpill Lee
+	- Official Release for SQA(08.06.10)
+
+dev-4-4-3: Byungjae Lee
+	- Support Ethernet gadget for s3c6410
+		M drivers/usb/gadget/epautoconf.c
+		M drivers/usb/gadget/ether.c
+		M drivers/usb/gadget/s3c-udc-otg-hs.c
+		M drivers/usb/gadget/s3c-udc.h
+		M include/asm-arm/arch-s3c2410/regs-usb-otg-hs.h
+
+dev-4-4-4: SungJun Bae
+	- IIS ALSA : wm8580 wm8990, 24bit Playback, Capture
+	- SoC : s3c2450,s3c2416,s3c6410 (08.06.13)
+		M include/asm-arm/arch-s3c2410/regs-iis.h
+		M sound/soc/codecs/wm8580.c 
+		M sound/soc/codecs/wm8580.h
+		M sound/soc/s3c/Kconfig 
+		M sound/soc/s3c/s3c2450-i2s.c
+		M sound/soc/s3c/s3c6410-i2s-v40.c
+		M sound/soc/s3c/smdk6410_wm8580.c
+
+dev-4-4-5: Byungjae Lee
+	- Support USB Host1.1 2 Ports on SMDK6400.
+	  If you use USB Host port2, modify SMDK6400.
+		M drivers/usb/host/ohci-s3c2410.c
+
+rel-4-4-2: Jinsung Yang
+	- Official Release (08.06.18)
+
+rel-4-4-3: Jinsung Yang
+	- Official Release (08.06.23)
+dev-4-4-6: Jongpill Lee
+	- HS-SPI pull up register enable for speed up
+
+	Modified files
+		M drivers/spi/hspi-s3c6400.c
+
+dev-4-4-7: Ryu Euiyoul
+	- Support wm8580 I2S v4.0 at smdk6410
+
+	Modified files
+		M arch/arm/mach-s3c6410/mach-smdk6410.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M include/asm-arm/plat-s3c24xx/devs.h
+		M sound/soc/codecs/wm8580.c
+		M sound/soc/s3c/smdk6410_wm8580.c
+
+dev-4-4-8: Jiun Yu
+	- Modified reserved memory layout
+
+	Modified files
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M arch/arm/mach-s3c6410/mach-smdk6410.c
+		M include/asm-arm/arch-s3c2410/reserved_mem.h
+
+dev-4-4-9: Jiun Yu
+	- bug fixed reverved memory layout for S3C6400/S3C6410
+
+	Modified file
+		M include/asm-arm/arch-s3c2410/reserved_mem.h
+
+dev-4-4-10: Jongpill Lee
+	- Modified the Function about UART Baud rate
+
+	Modified file
+		M drivers/serial/s3c6400.c
+
+dev-4-4-11: Ryu Euiyoul
+	- Implementation of PCM Interface to smdk6410
+	Modified Files:
+		arch/arm/mach-s3c6410/clock.c arch/arm/mach-s3c6410/dma.c 
+		include/asm-arm/arch-s3c2410/dma.h 
+		include/asm-arm/arch-s3c2410/map.h sound/soc/codecs/wm8580.c 
+		sound/soc/codecs/wm8580.h sound/soc/s3c/Kconfig 
+		sound/soc/s3c/Makefile 
+	Added Files:
+		include/asm-arm/arch-s3c2410/regs-pcm.h 
+		sound/soc/s3c/s3c6410-pcmif.c sound/soc/s3c/s3c6410-pcmif.h 
+		sound/soc/s3c/smdk6410_wm8580_pcmif.c 
+
+rel-4-4-12: Ryu Euiyoul
+	- Official Release (08.07.14)
+
+dev-4-4-13: Ryu Euiyoul
+	- PCM I/F noise problem fix
+	Modified Files:
+		sound/soc/s3c/s3c6410-pcmif.c
+		sound/soc/s3c/smdk6410_wm8580_pcmif.c 
+
+rel-4-4-14: Ryu Euiyoul
+	- Official Release (08.07.15)
+
+dev-4-4-15: Jiun Yu
+	- Modified reserved memory layout for TV scaler
+	Modified Files:
+		arch/arm/mach-s3c6400/mach-smdk6400.c
+		arch/arm/mach-s3c6410/mach-smdk6410.c
+		include/asm-arm/arch-s3c2410/reserved_mem.h
+
+dev-4-4-16: Jongpill Lee
+	- SPI bug fixed about DMA on SMDK2450 & SMDK2416
+
+	Modified Files:
+
+		M arch/arm/mach-s3c2450/dma.c
+		M drivers/spi/hspi-s3c2443.c
+		M drivers/spi/hspi-s3c2443.h
+
+rel-4-5-0: Jongpill Lee
+	- Official Release ('08.07.23)
+
+dev-4-5-0: Jongpill Lee
+	- Start new dev tag
+
+dev-4-5-1: Jongpill Lee
+	- added cpu id for support S3C2450 EVT3
+
+	Modified Files:
+		M arch/arm/plat-s3c24xx/cpu.c 
+
+dev-4-5-2: Byungjae Lee
+	- Modefied USB OTG(D) timing value for more stable working on SMDK6410.
+	- Implementation USB OTG DMA Mode but this need to be optimized timing
+	  on SMDK6410.
+
+	Modifed files
+		M drivers/usb/gadget/s3c-udc-otg-hs.c
+		M include/asm-arm/arch-s3c2410/regs-usb-otg-hs.h
+
+dev-4-5-3: Byungjae Lee
+	- Support USB2.0 Device transfer packet length over 64Bytes on EP0.
+
+	Modified file
+		M drivers/usb/gadget/s3c-udc-hs.c
+
+rel-4-6-0: Jongpill Lee
+	- Official Release (08.07.28)
+
+dev-4-6-1: Jongpill Lee
+
+	- Modified Some Function for HS-SPI
+
+	Modified Files:
+		M drivers/spi/hspi-s3c2443.c
+		M drivers/spi/hspi-s3c2443.h
+
+dev-4-6-2: Byungjae Lee
+	- Implementation USB OTG Host for SMDK6410(But this is incomplete.)
+
+	Modified files
+		M arch/arm/mach-s3c6400/mach-smdk6400.c
+		M arch/arm/mach-s3c6410/mach-smdk6410.c
+		M arch/arm/plat-s3c24xx/devs.c
+		M drivers/usb/Makefile
+		M drivers/usb/gadget/Kconfig
+		M drivers/usb/host/Kconfig
+		M drivers/usb/host/Makefile
+		M include/asm-arm/plat-s3c24xx/devs.h
+	Addef files
+		A drivers/usb/host/s3c-otg/*
+
+dev-4-6-3: Byungjae Lee
+	- Support USB HS OTG Host for SMDK6410
+	- HID(Keyboard, Mouse), Mass Storage, Card Reader Support
+
+	Modified files
+		drivers/usb/host/s3c-otg/*
+	
+	Added files
+		drivers/usb/host/s3c-otg/s3c-otg-common-typedef.h
+		drivers/usb/host/s3c-otg/s3c-otg-transferchecker-iso.c
+		drivers/usb/host/s3c-otg/s3c-otg-transferchecker-iso.h
+
+rel-4-7-0: Byungjae Lee
+	- Official Release (08.08.28)
+
+dev-4-7-0: Byungjae Lee
+
+dev-4-7-1: Jinsung Yang
+	- QoS configuration optimized to resolve mfc underrun
+
+	Modified files:
+		arch/arm/mach-s3c6410/mach-smdk6410.c
+		include/asm-arm/arch-s3c2410/map.h
+
+rel-4-7-1: Kyoungil Kim
+	- Official Release (08.09.17)

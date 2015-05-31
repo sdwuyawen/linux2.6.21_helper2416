@@ -1,0 +1,57 @@
+--- s3c_7inch.c	2010-02-06 13:46:18.171740303 +0800
++++ s3c_43inch.c	2010-02-06 13:59:25.095536219 +0800
+@@ -35,13 +35,13 @@
+ 
+ #define DEFAULT_BACKLIGHT_LEVEL		2
+ 
+-#define H_FP		8		/* front porch */
+-#define H_SW		3		/* Hsync width */
+-#define H_BP		13		/* Back porch */
++#define H_FP		5		/* front porch */
++#define H_SW		20		/* Hsync width */
++#define H_BP		23		/* Back porch */
+ 
+-#define V_FP		5		/* front porch */
++#define V_FP		3		/* front porch */
+ #define V_SW		1		/* Vsync width */
+-#define V_BP		7		/* Back porch */
++#define V_BP		13		/* Back porch */
+ 
+ extern struct s3c_fb_info info[S3C_FB_NUM];
+ s3c_win_info_t window_info;
+@@ -70,8 +70,8 @@
+ #define STOP_OSD		0
+ 
+ // QCIF OSD image
+-#define H_RESOLUTION_OSD	800	/* horizon pixel  x resolition */
+-#define V_RESOLUTION_OSD	480	/* line cnt       y resolution */
++#define H_RESOLUTION_OSD	480	/* horizon pixel  x resolition */
++#define V_RESOLUTION_OSD	272	/* line cnt       y resolution */
+ 
+ 
+ #define ALPHA_UP		3
+@@ -90,11 +90,11 @@
+ int osd_left_bottom_y = V_RESOLUTION_OSD -1;
+ //------------------------------------------------------------------------
+ 
+-#define H_RESOLUTION	800	/* horizon pixel  x resolition */
+-#define V_RESOLUTION	480	/* line cnt       y resolution */
++#define H_RESOLUTION	480	/* horizon pixel  x resolition */
++#define V_RESOLUTION	272	/* line cnt       y resolution */
+ 
+-#define H_RESOLUTION_VIRTUAL	800	/* horizon pixel  x resolition */
+-#define V_RESOLUTION_VIRTUAL	960	/* line cnt       y resolution */
++#define H_RESOLUTION_VIRTUAL	525	/* horizon pixel  x resolition */
++#define V_RESOLUTION_VIRTUAL	288	/* line cnt       y resolution */
+ 
+ #define VFRAME_FREQ     60	/* frame rate freq */
+ #define PIXEL_BPP8	8
+@@ -1734,7 +1734,7 @@
+ 
+ void Init_LDI(void)
+ {
+-	printk(KERN_INFO "LCD TYPE :: S3C_7inch LCD will be initialized\n");
++	printk(KERN_INFO "LCD TYPE :: S3C_4.3inch LCD will be initialized\n");
+ 
+ 	SetLcdPort();
+ }

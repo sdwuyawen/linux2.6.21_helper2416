@@ -1,0 +1,10 @@
+#
+# DVFS (Dynamic voltage/frequency Scaling)
+#
+
+menu "DVFS support"
+
+config DVFS
+	tristate "Support for DVFS on SMDK Board"
+	depends on CPU_S3C6400 || CPU_S3C6410 || CPU_S3C2416 || CPU_S3C2450 || CPU_S3C2443
+endmenu

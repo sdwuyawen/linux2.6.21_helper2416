@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#
+# This script will create a u-boot binary for movinand/mmc boot
+#
+
+# padding to 512k the u-boot.bin
+rm -f zImage-movi
+cat zImage >> zImage-2x
+cat zImage >> zImage-2x
+#cat u-boot.bin >> u-boot-2x.bin
+split -d -a 1 -b 2048k zImage-2x zImage-2m
+
+
+
+
+
+# renaming and change mode
+mv zImage-2m0 zImage-movi
+chmod 777 zImage-movi
+
+# removing temp files
+
+rm -f zImage-2m*
+rm -f zImage-2x
+
+rm -f zImage
+cp zImage-movi zImage
+rm zImage-movi
+cp zImage /tftpboot
